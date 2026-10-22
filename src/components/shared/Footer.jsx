@@ -65,7 +65,7 @@ export default function Footer() {
         <section>
           <h2>Baixe o app GT Store</h2>
           <div className="site-footer__app">
-            <img src={logoGT} alt="Logo da GT Store" className="site-footer__qr" />
+            <img src={logoGT} alt="Logo GT" className='site-footer__qr'/>
             <div className="site-footer__stores">
               <a href="#">App Store</a>
               <a href="#">Google Play</a>

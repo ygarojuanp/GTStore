@@ -1,23 +1,28 @@
-import Header from "./components/shared/Header";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Footer from "./components/shared/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Header from "./components/shared/Header"
+import Footer from "./components/shared/Footer"
+import CartProvider from "./context/CartProvider"
+import Home from "./pages/Home"
+import ProductList from "./pages/ProductList"
+import Cart from "./pages/Cart"
 
 function App() {
   return (
-    <BrowserRouter>
-      <main>
+    <CartProvider>
+      <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/product" element={<p>Product</p>} />
-          <Route path="/login" element={<p>login</p>} />
-          <Route path="/carrinho" element={<p>Carrinho</p>} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/produtos" element={<ProductList />} />
+            <Route path="/login" element={<p>login</p>} />
+            <Route path="/carrinho" element={<Cart />} />
+          </Routes>
+        </main>
         <Footer />
-      </main>
-    </BrowserRouter>
-  );
+      </BrowserRouter>
+    </CartProvider>
+  )
 }
 
-export default App;
+export default App

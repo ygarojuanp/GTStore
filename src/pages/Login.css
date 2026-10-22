@@ -1,0 +1,107 @@
+.login-page {
+  display: grid;
+  min-height: 32rem;
+  place-items: center;
+  padding: 3rem 1rem 4rem;
+  background: #f8f9fc;
+}
+
+.login-card {
+  width: min(100%, 26rem);
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgb(17 24 39 / 8%);
+}
+
+.login-card__eyebrow {
+  color: #432cd8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.login-card h1 {
+  margin: 0.5rem 0;
+  color: #111827;
+  font-size: 1.8rem;
+}
+
+.login-card > p {
+  margin: 0 0 1.5rem;
+  color: #6b7280;
+}
+
+.login-card form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.login-card label {
+  margin-top: 0.5rem;
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.login-card input {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.login-card input:focus {
+  border-color: #432cd8;
+  outline: 2px solid rgb(67 44 216 / 20%);
+}
+
+.login-card button,
+.login-page__button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background: #432cd8;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-card button:hover,
+.login-card button:focus-visible,
+.login-page__button:hover,
+.login-page__button:focus-visible {
+  background: #3020a4;
+  color: #fff;
+}
+
+.login-card button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.login-card__error {
+  margin: 0.75rem 0 0;
+  color: #b42318;
+  font-size: 0.9rem;
+}
+
+.login-page--already-authenticated {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.login-page--already-authenticated h1 {
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.login-page--already-authenticated p {
+  color: #6b7280;
+}
